@@ -1,0 +1,82 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.pyc
+
+# Django Stuff
+*.log
+*.pot
+*.pyc
+*.mo
+*.db
+*.sqlite3
+db.sqlite3
+local_settings.py
+.env
+.env.*
+
+# If using Django's default media file handling
+/media
+/staticfiles
+/static_root/
+media/
+media_root/
+static/
+static_root/
+
+# VS Code settings
+.vscode/
+
+# Virtual Environment
+env/
+venv/
+ENV/
+.venv/
+env.bak/
+venv.bak/
+
+# PyCharm
+.idea/
+
+# MacOS
+.DS_Store
+
+# Pip dependency file logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Coverage and test reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Migrations (optional to ignore if managed manually)
+*/migrations/*.py
+*/migrations/*.pyc
+# !keep the __init__.py file
+!*/migrations/__init__.py
+
+# Node/npm if using with frontend
+node_modules/
+*.lock
+package-lock.json
+yarn.lock
+dist/
+
+# Editor backups
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
