@@ -16,3 +16,5 @@ run the django server using command
 
 python manage.py runserver
 ------
+
+> test notification 
