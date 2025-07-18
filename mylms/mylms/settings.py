@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
     'authApp',
+    'studentApp',
 ]
 
 # Configure JWT authentication in Django REST Framework
@@ -171,3 +172,14 @@ SIMPLE_JWT = {
     'AUTH_HEADER_TYPES': ('Bearer',),
     'USER_ID_FIELD': 'email',
 }
+
+
+
+
+# for sending the email 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'  # Or the SMTP server of your email provider
+EMAIL_PORT = 587  # Use 465 for SSL, 587 for TLS
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'amtcuo8579@gmail.com'  # Your email address
+EMAIL_HOST_PASSWORD = 'rbuv gctk ajyi svxi'  # Your email App password

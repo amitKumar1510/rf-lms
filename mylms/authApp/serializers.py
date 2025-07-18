@@ -12,7 +12,7 @@ class AdminUserSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         user = CustomUser(
             email=validated_data['email'],
-            uid=validated_data.get('Uid', ''),
+            Uid=validated_data.get('Uid', ''),
             first_name=validated_data.get('first_name', ''),
             last_name=validated_data.get('last_name', ''),
             role=validated_data['role']

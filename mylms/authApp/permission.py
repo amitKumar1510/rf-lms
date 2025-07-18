@@ -24,7 +24,7 @@ class IsParent(BasePermission):
 def is_role_change_allowed(current_user, new_role):
     allowed_map = {
         'admin': ['admin','teacher', 'principal', 'parent'],
-        'principal': ['teacher', 'parent', 'student'],
-        'teacher': ['student', 'parent'],
+        # 'principal': ['teacher', 'parent', 'student'],
+        # 'teacher': ['student', 'parent'],
     }
     return new_role in allowed_map.get(current_user.role, [])

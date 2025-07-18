@@ -1,6 +1,5 @@
 from django.urls import path
 from .views import (
-    UserRegistrationView,
     AdminUserRegistrationView,
     UserListView,
     CustomTokenObtainPairView,DeleteUserView, UpdateUserRoleByRole,DeactivateAndActivteUserView
@@ -13,8 +12,8 @@ urlpatterns = [
     path('auth/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 
     # User Registration
-    path('register/', UserRegistrationView.as_view(), name='user-register'),
-    # path('admin/register/', AdminUserRegistrationView.as_view(), name='admin-register'),
+    # path('register/', UserRegistrationView.as_view(), name='user-register'),
+    path('register/', AdminUserRegistrationView.as_view(), name='register'),
 
     # User Management (Admin only)
     path('users/', UserListView.as_view(), name='user-list'),
